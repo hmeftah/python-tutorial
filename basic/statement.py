@@ -21,7 +21,45 @@ Basic python keywords
 import os
 import re
 import sys
+import datetime
 
 
-print("test")
-print(2 ** 100)
+
+
+
+
+
+
+if __name__ == "__main__":
+
+    print("test")
+    print(2 ** 100)
+
+    # print est une fonction
+    i = 5
+    mykey= "temps"
+    fois = 20
+    print ('%d et le mot \'%s\' apparaissent %d fois,' % (i, mykey, fois))
+    text = " c'est le texte"
+    text1= 'c:\\user\\val'
+    text2="""c'est le texte avec  triple-quote C:\\user """
+    print (text)
+    print (text1)
+    print (text2)
+
+    trips = {'last': None, 'current': None, 'max' : 0 , 'avg' : 0}
+
+
+    date_now = trips['current']= str(datetime.datetime.now())[0:19]
+    print (date_now)
+    print (trips)
+
+
+
+
+
+
+
+
+
+
