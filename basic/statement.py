@@ -25,13 +25,15 @@ import datetime
 
 
 
-
-
-
+print ("Hello")
 
 
 if __name__ == "__main__":
 
+    print(sys.version_info)
+    print(sys.version)
+
+    print(sys.platform)
     print("test")
     print(2 ** 100)
 
@@ -47,12 +49,40 @@ if __name__ == "__main__":
     print (text1)
     print (text2)
 
+    var = 10
+    while True:
+        var -=1
+        if (var ==6):
+            continue
+        print (var)
+        if(var == 0):
+            break
+    print ("end loop")
+
+
     trips = {'last': None, 'current': None, 'max' : 0 , 'avg' : 0}
 
 
     date_now = trips['current']= str(datetime.datetime.now())[0:19]
     print (date_now)
     print (trips)
+
+    with open('random.bin', 'wb') as f:
+        f.write(os.urandom(255))
+
+    a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    print('First four:', a[:4])
+    print('Last four: ', a[-4:])
+    print('Middle two:', a[3:-3])
+
+    first_twenty_items = a[:20]
+    print (first_twenty_items)
+    last_twenty_items = a[-20:]
+    print(last_twenty_items)
+    zero_twenty_items = a[-0:]
+    print(zero_twenty_items)
+
+
 
 
 
