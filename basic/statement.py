@@ -82,6 +82,46 @@ if __name__ == "__main__":
     zero_twenty_items = a[-0:]
     print(zero_twenty_items)
 
+    print ('Before' , a)
+    a[2:7]=[99,22,14]
+    print ('After', a)
+
+    b= a[:]    #copy of a
+    print('B est', b)
+
+    a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    print("position impaire", a[::2])
+    print("position a partir de la fin", a[::-2])
+
+    a = [1,2,3,4,5,6,7,8,9,10]
+    squares = [x**2 for x in a]
+    print (squares)
+
+    squares = map(lambda x:x**2,a)
+    b =list(squares)
+    print (b)
+
+    even_squares = [x**2 for x in a if x % 2 ==0]
+    print (even_squares)
+
+    chile_ranks = {'ghost': 1, 'habanero': 2, 'cayenne': 3}
+    rank_dict = {rank: name for name, rank in chile_ranks.items()}
+    chile_len_set = {len(name) for name in rank_dict.values()}
+    print(rank_dict)
+    print(chile_len_set)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
